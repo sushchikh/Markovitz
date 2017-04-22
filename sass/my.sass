@@ -1,0 +1,400 @@
+@import 'reset'
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700')
+
+
+body
+	font-family: roboto, san-serif, verdana
+	position: relative
+
+// variables
+
+$green: #50AF6F
+$white: #fafafa
+$white_light: #AEECC2
+$black: #28292B
+$gray: #46484C
+$gray_light: #46484C
+$v_size: 50px
+
+// ##     ## ########    ###    ########
+// ##     ## ##         ## ##   ##     ##
+// ##     ## ##        ##   ##  ##     ##
+// ######### ######   ##     ## ##     ##
+// ##     ## ##       ######### ##     ##
+// ##     ## ##       ##     ## ##     ##
+// ##     ## ######## ##     ## ########
+
+.header_container
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: no-wrap
+	flex-direction: column
+	background-color: $green
+	padding: 50px 0px 
+	position: relative
+
+.header_nav
+	text-transform: uppercase
+	color: $white
+	font-size: 20px
+	margin-bottom: 35px
+
+.header_nav_element
+	color: $white_light
+	text-transform: uppercase
+	border-bottom: 3px solid $white_light
+	display: inline-block
+	padding-bottom: 5px
+	cursor: pointer
+	transition: all .2s
+	margin: 0 30px
+	&:hover
+		color: $white
+		border-bottom: 3px solid $white
+	&:active
+		position: relative
+		padding-bottom: 0px
+
+.header_title
+	text-transform: uppercase
+	font-size: 70px
+	font-weight: 700
+	color: $white
+	margin-bottom: 20px
+
+.underline
+	width: 100px
+	height: 3px
+	background-color: $white_light
+	margin: 0 auto
+	margin-bottom: 30px
+
+
+.header_subtitle
+	text-transform: uppercase
+	color: $white_light
+	font-size: 25px
+
+.eye
+	border-bottom-left-radius: 140px
+	border-bottom-right-radius: 140px
+	background-color: $green
+	width: 140px
+	height: 70px
+	margin: 0 auto
+	position: relative
+	top: -20px
+	font-size: 50px
+	color: $white_light
+	text-align: center
+	line-height: 10px
+	.icon-eye
+		position: relative
+		top: -5px
+
+//    ###     ######  ##     ## #### ######## ##     ##
+//   ## ##   ##    ## ##     ##  ##  ##       ##     ##
+//  ##   ##  ##       ##     ##  ##  ##       ##     ##
+// ##     ## ##       #########  ##  ######   ##     ##
+// ######### ##       ##     ##  ##  ##        ##   ##
+// ##     ## ##    ## ##     ##  ##  ##         ## ##
+// ##     ##  ######  ##     ## #### ########    ###
+
+.achievments_container
+	background-color: $black
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap		
+	flex-direction: column
+	padding-bottom: $v_size*2
+
+.achievments_title
+	text-transform: uppercase
+	color: $white
+	font-weight: 100
+	text-align: center
+	font-size: 25px
+	margin-top: 50px
+	margin-bottom: 75px
+
+.time-line_container
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	flex-wrap: wrap
+
+.time-line_element
+	max-width: 250px
+	text-align: center
+
+
+.marker
+	display: inline-block
+	background-color: $green
+	width: 60px
+	height: 60px
+	color: $white
+	text-align: center
+	transform: rotate(-45deg)
+	margin-bottom: 20px
+	border-radius: 30px 30px 30px 0px
+
+
+.marker_date
+	position: relative
+	display: inline-block
+	transform: rotate(45deg)
+	top: 20px
+	left: 0px	
+
+.line
+	background-color: $gray
+	width: 100%
+	height: 3px
+	display: inline-block
+	position: relative
+
+.dot
+	width: 15px
+	height: 15px
+	display: inline-block
+	border-radius: 50%
+	background-color: $gray
+	position: relative
+	top: -13px
+	left: 0
+
+
+.time-line_element_title
+	text-transform: uppercase
+	color: $green
+	margin-top: 10px
+	margin-bottom: 10px
+
+.time-line_element_text
+	padding: 0px 10px
+	color: $white
+	font-weight: 100
+	font-size: 14px	
+
+
+//  ######  ##    ## #### ##       ##        ######
+// ##    ## ##   ##   ##  ##       ##       ##    ##
+// ##       ##  ##    ##  ##       ##       ##
+//  ######  #####     ##  ##       ##        ######
+//       ## ##  ##    ##  ##       ##             ##
+// ##    ## ##   ##   ##  ##       ##       ##    ##
+//  ######  ##    ## #### ######## ########  ######
+
+.skills_header
+	background-color: $green
+	text-align: center
+	padding: 25px
+
+
+.skills_header_title
+	display: inline-block
+	text-align: center
+	color: $white_light
+	font-size: 25px
+	text-transform: uppercase
+
+.skills_container
+	background-color: $black
+	padding-bottom: 75px
+
+.two_groups_of_skills
+	display: flex
+	justify-content: space-around
+	align-items: center
+	flex-wrap: wrap
+
+.group_of_skills
+	text-align: left
+	width: 30%
+
+.skill_group_title
+	text-transform: uppercase
+	font-size: 25px
+	color: $white
+	font-weight: 100
+	margin-top: 20px
+	margin-bottom: 25px
+
+.skill_group_text
+	color: $gray_light
+	font-size: 16px
+	max-width: 400px
+	margin-bottom: 30px
+
+
+.skill_rate	
+	text-transform: uppercase
+	color: $white
+	font-size: 17px
+	font-weight: 100
+	padding: 5px 0px 0px 20px
+	height: 100%
+	display: inline-block
+
+
+.skill
+	margin-top: 20px
+	margin-bottom: 20px	
+	background-color: $gray_light
+	width: 430px
+	height: 30px
+	border-radius: 5px
+	overflow: hidden
+
+.graphic_skill1,
+.graphic_skill2,
+.graphic_skill3,
+.graphic_skill4,
+.develop_skill1,
+.develop_skill2,
+.develop_skill3,
+.develop_skill4    
+	background-color: $green
+
+
+.graphic_skill1
+	width: 100%
+.graphic_skill2
+	width: 80%
+.graphic_skill3
+	width: 60%
+.graphic_skill4
+	width: 75%
+.develop_skill1
+	width: 80%
+.develop_skill2
+	width: 95%
+.develop_skill3
+	width: 50%
+.develop_skill4
+	width: 85%
+
+.skills_icons_container
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	margin-top: 40px
+
+.skills_icons_element
+	width: 150px
+	height: 150px
+	border-radius: 50%
+	margin: 0 20px
+	color: $gray_light
+	font-size: 100px
+	text-align: center
+	border: 1px solid $gray_light
+.icon
+	position: relative
+	top: 14px
+
+.skills_descriptions
+	width: 80%
+	margin: 0 auto
+	display: block	
+	margin-top: 50px
+	color: $gray_light
+
+// ########   #######  ######## ########
+// ##     ## ##     ##    ##    ##
+// ##     ## ##     ##    ##    ##
+// ########  ##     ##    ##    ######
+// ##        ##     ##    ##    ##
+// ##        ##     ##    ##    ##
+// ##         #######     ##    ##
+
+.portfolio_wrapper
+	background-color: $gray
+	padding-bottom: 50px
+
+.porfolio_container
+	max-width: 1400px
+	display: flex
+	text-align: center
+	justify-content: center
+	align-items: center
+	margin: 0 auto
+	flex-wrap: wrap
+	padding-top: 10px
+	padding-bottom: 10px
+
+
+.porfolio_head_title
+	color: $white
+	font-size: 25px
+	font-weight: 100
+	text-transform: uppercase
+	background-color: $gray
+	text-align: center
+
+.porfolio_element
+	margin: 20px
+	width: 300px
+	display: inline-block
+	height: 300px
+	overflow: hidden
+	border-radius: 50%
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat 
+	&:hover .porfolio_title
+		opacity: 1
+
+.porfolio_title
+	height: 100%
+	padding-top: 48%
+	opacity: 0
+	transition: opacity .2s ease	
+	background-color: rgba($white, .5)
+	
+
+.pf_element1
+	background-image: url(../img/portfolio/1.jpg)
+.pf_element2
+	background-image: url(../img/portfolio/2.jpg)
+.pf_element3
+	background-image: url(../img/portfolio/3.jpg)
+.pf_element4
+	background-image: url(../img/portfolio/4.jpg)
+.pf_element5
+	background-image: url(../img/portfolio/5.jpg)
+.pf_element6
+	background-image: url(../img/portfolio/6.jpg)
+.pf_element7
+	background-image: url(../img/portfolio/7.jpg)					
+.pf_element8
+	background-image: url(../img/portfolio/8.jpg)	
+
+.contacts_container
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	flex-wrap: wrap
+	padding: 50px 0px 50px 150px
+
+.photo
+	background-image: url(../img/contacts/me.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	width: 500px
+	height: 500px
+	border-radius: 50%
+
+.contacts_info
+	margin-left: 100px
+	color: $white
+	font-size: 50px	
+.phone
+	margin-top: 20px
+	margin-bottom: 20px	
+	
