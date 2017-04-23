@@ -29,10 +29,10 @@
 <div class="header_container">
 
   <div class="header_nav">
-    <div class="header_nav_element">home</div>
-    <div class="header_nav_element">my skills</div>
-    <div class="header_nav_element">portfolio</div>
-    <div class="header_nav_element">contact</div>
+    <a href="#" class="go_to"><div class="header_nav_element">home</div></a>
+    <a href="#skills" class="go_to"><div class="header_nav_element">my skills</div></a>
+    <a href="#portfolio" class="go_to"><div class="header_nav_element">portfolio</div></a>
+    <a href="#contacts" class="go_to"><div class="header_nav_element">contact</div></a>
   </div>  
 
   <div class="header_title">john markovitz</div>
@@ -55,7 +55,8 @@
 ##     ##  ######  ##     ## #### ########    ###
  -->
 
-<div class="achievments_container">
+<div class="achievments_container" id="achievments">
+<div class="achievments_trigger"></div>
     <div class="eye"><span class="icon-eye"></span></div>
 
     <div class="achievments_title">here are my biggest achievemnts</div>
@@ -111,7 +112,7 @@
  ######  ##    ## #### ######## ########  ######
  -->
 
-<div class="skills_header">
+<div class="skills_header" id="skills">
   <div class="skills_header_title">my skills</div>  
 </div>
 
@@ -121,36 +122,38 @@
   <div class="two_groups_of_skills">
 
     <div class="group_of_skills">
+    <div class="skills_trigger1"></div>
       <div class="skill_group_title">Graphic skills:</div>
       <div class="skill_group_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum esse perferendis velit, tenetur placeat ipsa sunt autem ut ducimus maxime.</div>
       <div class="skill">
-        <div class="graphic_skill1 skill_rate">photoshop</div>
+        <div class="graphic_skill1 skill_rate skill_rate1">photoshop</div>
       </div>
       <div class="skill">
-        <div class="graphic_skill2 skill_rate">illustrator</div>
+        <div class="graphic_skill2 skill_rate skill_rate1">illustrator</div>
       </div>
       <div class="skill">
-        <div class="graphic_skill3 skill_rate">indesign</div>
+        <div class="graphic_skill3 skill_rate skill_rate1">indesign</div>
       </div>
       <div class="skill">
-        <div class="graphic_skill4 skill_rate">flash</div>
+        <div class="graphic_skill4 skill_rate skill_rate1">flash</div>
       </div>
     </div>
 
     <div class="group_of_skills">
+    <div class="skills_trigger2"></div>    
       <div class="skill_group_title">Development skills:</div>
       <div class="skill_group_text">Itaque magni accusamus eum veniam, rerum voluptas porro. Quos ducimus atque aliquam nulla, harum soluta. Ratione fugiat reprehenderit.</div>
       <div class="skill">
-        <div class="develop_skill1 skill_rate">html</div>
+        <div class="develop_skill1 skill_rate skill_rate2">html</div>
       </div>
       <div class="skill">
-        <div class="develop_skill2 skill_rate">wordpress</div>
+        <div class="develop_skill2 skill_rate skill_rate2">wordpress</div>
       </div>
       <div class="skill">
-        <div class="develop_skill3 skill_rate">javascript</div>
+        <div class="develop_skill3 skill_rate skill_rate2">javascript</div>
       </div>
       <div class="skill">
-        <div class="develop_skill4 skill_rate">seo</div>
+        <div class="develop_skill4 skill_rate skill_rate2">seo</div>
       </div>
     </div>
   
@@ -185,8 +188,8 @@
 ##        ##     ## ##    ##     ##    ##
 ##         #######  ##     ##    ##    ##
  -->
-
-<div class="portfolio_wrapper">
+<div class="portfolio_trigger"></div>
+<div class="portfolio_wrapper" id="portfolio">
 <div class="skills_header">
   <div class="skills_header_title">portfolio</div>
 </div>
@@ -236,7 +239,7 @@
  ######   #######  ##    ##    ##     ######     ##     ######
  -->
 
-<div class="portfolio_wrapper">
+<div class="portfolio_wrapper" id="contacts">
 
 <div class="skills_header">
   <div class="skills_header_title">contacts</div>

@@ -49,6 +49,13 @@ $v_size: 50px
 	cursor: pointer
 	transition: all .2s
 	margin: 0 30px
+	@media only screen and (max-width: 650px)
+		margin: 0 10px
+	@media only screen and (max-width: 450px)	
+		font-size: 15px
+	@media only screen and (max-width: 400px)	
+		margin: 0 5px
+		font-size: 14px
 	&:hover
 		color: $white
 		border-bottom: 3px solid $white
@@ -60,8 +67,14 @@ $v_size: 50px
 	text-transform: uppercase
 	font-size: 70px
 	font-weight: 700
+	text-align: center
+	transition: font-size .2s
 	color: $white
 	margin-bottom: 20px
+	@media only screen and (max-width: 650px)
+		font-size: 50px
+	@media only screen and (max-width: 450px)	
+		font-size: 40px
 
 .underline
 	width: 100px
@@ -75,6 +88,7 @@ $v_size: 50px
 	text-transform: uppercase
 	color: $white_light
 	font-size: 25px
+	text-align: center
 
 .eye
 	border-bottom-left-radius: 140px
@@ -101,9 +115,15 @@ $v_size: 50px
 // ##     ## ##    ## ##     ##  ##  ##         ## ##
 // ##     ##  ######  ##     ## #### ########    ###
 
+.achievments_trigger
+	@media only screen and (max-height: 800px)
+		position: absolute
+		top: 130px
+
 .achievments_container
 	background-color: $black
 	display: flex
+	position: relative
 	justify-content: center
 	align-items: center
 	flex-wrap: wrap		
@@ -118,6 +138,9 @@ $v_size: 50px
 	font-size: 25px
 	margin-top: 50px
 	margin-bottom: 75px
+	@media only screen and (max-width: 500px)
+		margin-top: 15px
+		margin-bottom: 10px
 
 .time-line_container
 	display: flex
@@ -130,6 +153,10 @@ $v_size: 50px
 	text-align: center
 
 
+	@media only screen and (max-width: 750px)
+		margin-top: 20px
+
+
 .marker
 	display: inline-block
 	background-color: $green
@@ -138,8 +165,17 @@ $v_size: 50px
 	color: $white
 	text-align: center
 	transform: rotate(-45deg)
+	position: relative
+	top: 7px
 	margin-bottom: 20px
 	border-radius: 30px 30px 30px 0px
+	opacity: 0	
+	transition: all .2s ease	
+	@media only screen and (max-width: 1250px)
+		margin-top: 10px
+	@media only screen and (max-width: 750px)	
+		margin-top: 20px
+
 
 
 .marker_date
@@ -172,6 +208,9 @@ $v_size: 50px
 	color: $green
 	margin-top: 10px
 	margin-bottom: 10px
+	@media only screen and (max-width: 750px)
+		margin-top: 0px
+		margin-bottom: 0px
 
 .time-line_element_text
 	padding: 0px 10px
@@ -210,10 +249,23 @@ $v_size: 50px
 	justify-content: space-around
 	align-items: center
 	flex-wrap: wrap
+	@media only screen and (max-width: 1000px)
+		flex-direction: column
+		justify-content: center
+		alig-items: center
 
 .group_of_skills
 	text-align: left
 	width: 30%
+	@media only screen and (max-width: 1300px)
+		width: 40%
+	@media only screen and (max-width: 1000px)
+		width: 45%
+	@media only screen and (max-width: 700px)	
+		width: 70%
+	@media only screen and (max-width: 400px)	
+		width: 80%
+
 
 .skill_group_title
 	text-transform: uppercase
@@ -238,7 +290,9 @@ $v_size: 50px
 	padding: 5px 0px 0px 20px
 	height: 100%
 	display: inline-block
-
+	opacity: 0
+	transform: translate(-100px, 0px)
+	transition: all .3s 
 
 .skill
 	margin-top: 20px
@@ -248,6 +302,8 @@ $v_size: 50px
 	height: 30px
 	border-radius: 5px
 	overflow: hidden
+	@media only screen and (max-width: 700px)
+		width: 75vw
 
 .graphic_skill1,
 .graphic_skill2,
@@ -258,6 +314,7 @@ $v_size: 50px
 .develop_skill3,
 .develop_skill4    
 	background-color: $green
+
 
 
 .graphic_skill1
@@ -283,6 +340,8 @@ $v_size: 50px
 	align-items: center
 	flex-wrap: wrap
 	margin-top: 40px
+	@media only screen and (max-width: 1600px)
+		margin-top: 10px
 
 .skills_icons_element
 	width: 150px
@@ -293,6 +352,9 @@ $v_size: 50px
 	font-size: 100px
 	text-align: center
 	border: 1px solid $gray_light
+	@media only screen and (max-width: 1520px)
+		margin: 10px 3px
+
 .icon
 	position: relative
 	top: 14px
@@ -326,6 +388,8 @@ $v_size: 50px
 	flex-wrap: wrap
 	padding-top: 10px
 	padding-bottom: 10px
+	@media only screen and (max-width: 500px)
+		flex-direction: column
 
 
 .porfolio_head_title
@@ -346,6 +410,15 @@ $v_size: 50px
 	background-position: center center
 	background-size: cover
 	background-repeat: no-repeat 
+	opacity: 0
+	transform: scale(0)
+	transition: all .2s
+	@media only screen and (max-width: 350px)
+		width: 270px
+		height: 270px
+	@media only screen and (max-width: 300px)	
+		width: 240px
+		height: 240px
 	&:hover .porfolio_title
 		opacity: 1
 
@@ -374,12 +447,30 @@ $v_size: 50px
 .pf_element8
 	background-image: url(../img/portfolio/8.jpg)	
 
+
+//  ######   #######  ##    ## ########    ###     ######  ########  ######
+// ##    ## ##     ## ###   ##    ##      ## ##   ##    ##    ##    ##    ##
+// ##       ##     ## ####  ##    ##     ##   ##  ##          ##    ##
+// ##       ##     ## ## ## ##    ##    ##     ## ##          ##     ######
+// ##       ##     ## ##  ####    ##    ######### ##          ##          ##
+// ##    ## ##     ## ##   ###    ##    ##     ## ##    ##    ##    ##    ##
+//  ######   #######  ##    ##    ##    ##     ##  ######     ##     ######
+
 .contacts_container
 	display: flex
-	justify-content: flex-start
+	justify-content: center
 	align-items: center
 	flex-wrap: wrap
+	overflow: hidden
 	padding: 50px 0px 50px 150px
+	@media only screen and (max-width: 1100px)	
+		flex-direction: column
+		justify-content: center
+		padding: 20px
+	@media only screen and (max-width: 700px)	
+		padding: 20px
+	@media only screen and (max-width: 500px)
+		padding: 10px
 
 .photo
 	background-image: url(../img/contacts/me.jpg)
@@ -387,14 +478,69 @@ $v_size: 50px
 	background-repeat: no-repeat
 	background-position: center center
 	width: 500px
+	position: relative
+	left: 135px
 	height: 500px
 	border-radius: 50%
+	@media only screen and (max-width: 1250px)
+		height: 400px
+		width: 400px
+	@media only screen and (max-width: 1100px)	
+		left: 0
+	@media only screen and (max-width: 920px)
+		margin-bottom: 20px
+	@media only screen and (max-width: 500px)
+		width: 400px
+		height: 400px
+	@media only screen and (max-width: 420px)
+		height: 300px
+		width: 300px
+	@media only screen and (max-width: 350px)
+		width: 200px
+		height: 200px
 
 .contacts_info
 	margin-left: 100px
 	color: $white
-	font-size: 50px	
+	font-size: 30px	
+	position: relative
+	left: 150px	
+	font-weight: 100
+	@media only screen and (max-width: 1400px)
+		left: 100px
+	@media only screen and (max-width: 1300px)	
+		left: 50px
+	@media only screen and (max-width: 1100px)	
+		left: 0
+	@media only screen and (max-width: 1000px)
+		font-size: 30px
+		margin-left: 50px
+	@media only screen and (max-width: 700px)
+		margin-left: 20px
+	@media only screen and (max-width: 500px)
+		margin-left: 10px
+		font-size: 20px
 .phone
 	margin-top: 20px
 	margin-bottom: 20px	
 	
+
+//    ###    ##    ## #### ##     ## ########
+//   ## ##   ###   ##  ##  ###   ### ##
+//  ##   ##  ####  ##  ##  #### #### ##
+// ##     ## ## ## ##  ##  ## ### ## ######
+// ######### ##  ####  ##  ##     ## ##
+// ##     ## ##   ###  ##  ##     ## ##
+// ##     ## ##    ## #### ##     ## ########	
+
+
+.show
+	opacity: 1
+
+.show_slide
+	opacity: 1
+	transform: translate(0)	
+
+.show_grow
+	opacity: 1
+	transform: scale(1)	
